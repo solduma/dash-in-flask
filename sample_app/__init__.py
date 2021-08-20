@@ -1,8 +1,8 @@
-# Dash가 탑재된 Flask 앱 시작
+# Dash가 탑재된 Flask 앱 구동
 from flask import Flask
 
 def init_app():
-  # Flask 앱 시작
+  # Flask 앱 구동
   app = Flask(__name__, instance_relative_config=False)
   app.config.from_object('config.Config')
 

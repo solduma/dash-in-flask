@@ -10,13 +10,7 @@ html_layout = """
         </head>
         <body class="dash-template">
             <header>
-              <div class="nav-wrapper">
-                <a href="/">
-                    <h1>Dash in Flask 샘플 화면입니다 (클릭하면 홈으로 이동합니다)</h1>
-                  </a>
-                <nav>
-                </nav>
-            </div>
+                <h1 style="margin-left:10px">Dash in Flask 샘플 화면입니다</h1>
             </header>
             {%app_entry%}
             <footer>
