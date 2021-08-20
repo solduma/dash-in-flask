@@ -1,14 +1,9 @@
 # 웹 요청에 대한 라우터
-from flask import render_template
+from flask import redirect
 from flask import current_app as app
 
 
-# 메인 URI에 들어오는 요청에 대한 답변 - 랜딩페이지 렌더링
+# 메인 URI에 들어오는 요청에 대한 답변 - 대시 어플리케이션 페이지로 리다이렉트
 @app.route('/')
 def home():
-  return render_template(
-    'index.jinja2',
-    title='홈 화면입니다',
-    template='home-template',
-    body="This is a homepage served with Flask."
-  )
+  return redirect("/dashApp", code=302)
