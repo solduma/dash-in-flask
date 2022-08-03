@@ -2,7 +2,8 @@
 Flask를 웹서버로 사용하는 Plotly Dash 대시보드 샘플 코드입니다.
 
 ## 실행법
-wsgi.py를 실행 시키면 됩니다.
+1. $ pip install -r requirements.txt
+2. $ python wsgi.py
 
 ## 파일 구조
 dash-inflask\
@@ -20,7 +21,7 @@ dash-inflask\
 ㄴwsgi.py                 - Web Server와 Python Script 간의 통신 인터페이스입니다.
 
 ## 실행 순서
-1. wsgi.py                - 웹-앱 인터페이스 생성                                                     ->  2번
+2. wsgi.py                - 웹-앱 인터페이스 생성                                                     ->  2번
 2. __init__.py            - Flask 앱 구동\
                           - Dash 앱 탑재\
                             - Route 정보 추가                                                        -> 3번\
