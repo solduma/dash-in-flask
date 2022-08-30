@@ -1,15 +1,15 @@
 # Dash 앱 생성과 관련된 스크립트
-import dash
-import dash_table
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import dash_table
+from dash import Dash
+from dash import html
+from dash import dcc
 from .data import create_dataframe
 from .layout import html_layout
 
 
 # Plotly Dash 대시보드 생성
 def init_dashboard(server):
-  dash_app = dash.Dash(
+  dash_app = Dash(
     server=server,
     routes_pathname_prefix='/dashApp/',
     external_stylesheets=[
